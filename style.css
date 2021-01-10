@@ -1,59 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
+:root {
+  font-size: 62.5%; /* significa que vai ter 10px, e cada 1.6rem = 16px */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h4, h3, h2, h1 {
+h2, h3 {
   font-weight: 300;
   text-align: center;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
 }
 
 p {
   text-align: center;
   opacity: .8;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  margin: 2.0rem 0;
 }
 
 img {
   width: 100%;
-  border-radius: 5px;
+  max-width: 800px;
+  border-radius: 0.5rem;
 }
 
 a {
   text-decoration: none;
   color: #fff;
+  border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.7);
+  transition: border-bottom 0.3s ease;
 }
 
-hr {
-  width: 30%;
-  margin: 20px;
-  border: 1px solid #C6C2C2ee;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.dash {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+a:hover {
+  border-bottom-color: transparent;
 }
 
 button {
   text-transform: uppercase;
   width: 100%;
   background-color: transparent;
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 5px;
-  letter-spacing: 1px;
+  padding: 1.4rem;
+  border: 0.1rem solid white;
+  border-radius: 0.5rem;
+  letter-spacing: 0.1rem;
   color: white;
   cursor: pointer;
 }
 
 button:focus {
   outline: none;
+}
+
+hr {
+  width: 30%;
+  margin: 2.0rem auto;
+  border: 0.1rem solid #C6C2C2ee;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 body {
@@ -67,9 +85,10 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding: 60px 40px 60px;
+  padding: 6.0rem 3.0rem 6.0rem;
   text-align: center;
   color: #fff;
+  height: 49.0rem;
   background-image: linear-gradient(
   45deg,
   #DAF7F8 0%,
@@ -86,28 +105,24 @@ body {
 }
 
 .header_container i {
-  font-size: 60px;
+  font-size: 6.4rem;
 }
 
-.header_container .header_title {
+.header_title {
   font-weight: 300;
-  margin: 20px 0;
+  margin-top: 30px;
 }
 
-.header_container p {
-  margin-bottom: 30px;
-}
-
-.header_container button {
+.header_btn {
   position: relative;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.header_container button::before {
+.header_btn::before {
   content: '';
-  width: 1px;
+  width: 0.1rem;
   background-color: white;
-  height: 1000px;
+  height: 100.0rem;
   position: absolute;
   left: 50%;
   bottom: 0;
@@ -115,33 +130,39 @@ body {
   transform-origin: bottom center;
 }
 
-.section_content article {
+
+
+article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 3.0rem 2.0rem 3.0rem;
   position: relative;
   overflow: hidden;
 }
 
-.section_content h2 {
-  margin: 30px 0 0;
+.article_background {
+  color: #fff;
 }
 
-.article_image hr {
+.article_background p {
+  opacity: .7;
+}
+
+.article_background hr {
   border-color: #fff;
 }
 
 .blur_bg {
-  background: url('https://images.wallpaperscraft.com/image/waterfall_river_rock_196671_1920x1080.jpg');
+  background: url('https://images.wallpaperscraft.com/image/forest_trees_nature_84566_1920x1080.jpg');
   background-position: center center;
   background-size: cover;
-  filter: blur(1px);
+  filter: blur(0.3rem);
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
+  top: -0.5rem;
+  left: -0.5rem;
+  width: calc(100% + 1.0rem);
+  height: calc(100% + 1.0rem);
   z-index: -1;
 }
 
@@ -153,16 +174,16 @@ body {
 }
 
 .article_icons div {
-  width: 80px;
-  height: 80px;
-  font-size: 40px;
+  width: 8.0rem;
+  height: 8.0rem;
+  font-size: 4.0rem;
   color: #fff;
-  border: 1px solid #fff;
+  border: 0.1rem solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  margin: 30px;
+  border-radius: 0.5rem;
+  margin: 2.5rem;
   transform: rotate(45deg);
   background-color: transparent;
 }
@@ -181,68 +202,59 @@ hr {
   color: #fff;
 }
 
-.article_image p + p {
-  margin-top: 40px;
-}
-
 article .itens {
-  margin: 20px 0;
+  margin: 2.0rem 0;
 }
 
 article .itens h3 {
-  margin-top: 20px;
-}
-
-article .itens p {
-  margin: 25px 0;
+  margin-top: 2.0rem;
 }
 
 article .itens button {
   color: #000;
-  border: 1px solid #ccc;
+  border: 0.2rem solid #ccc;
 }
 
-.footer_section{
+.register_container {
   position: relative;
-  padding: 25px;
+  padding: 3.0rem 2.5rem;
   overflow: hidden;
 }
 
-.footer_section h2 {
+.register_container h2 {
   color: #fff;
 }
 
-.footer_section hr {
-  margin: 20px auto;
-  border: 1px solid #fff;
+.register_container hr {
+  margin: 2.0rem auto;
+  border: 0.1rem solid #fff;
 }
 
-.footer_section p {
+.register_container p {
   color: #fff;
-  margin: 20px 0;
 }
 
-.footer_section button:nth-of-type(1) {
+.register_container button:nth-of-type(1) {
   background-color: #fff;
   color: #000;
   transition: 0.2s ease;
 }
 
-.footer_section button:nth-of-type(1):hover {
+.register_container button:nth-of-type(1):hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
-.footer_section button + button {
-  margin-top: 20px;
+.register_container button + button {
+  margin-top: 2.0rem;
 }
 
-.footer_social {
+.social {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 2.0rem;
   color: rgba(255, 255, 255, 0.7);
   background-image: linear-gradient(
   225deg,
@@ -259,12 +271,23 @@ article .itens button {
   #58B1BA 83%);
 }
 
-.social_container {
+.social p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.social_itens {
   list-style-type: none;
   display: flex;
 }
 
-.social_container li {
-  margin: 10px;
-  font-size: 25px;
+.social_itens li {
+  margin: 1.0rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 580px) {
+  br {
+    display: none;
+  }
 }

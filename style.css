@@ -34,13 +34,13 @@ p {
 img {
   width: 100%;
   max-width: 800px;
-  border-radius: 0.5rem;
+  border-radius: 5px;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  border-bottom: 0.1rem dashed rgba(255, 255, 255, 0.7);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
   transition: border-bottom 0.3s ease;
 }
 
@@ -54,7 +54,7 @@ button {
   background-color: transparent;
   padding: 1.4rem;
   border: 0.1rem solid white;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   letter-spacing: 0.1rem;
   color: white;
   cursor: pointer;
@@ -66,12 +66,16 @@ button:focus {
 
 hr {
   width: 30%;
-  margin: 2.0rem auto;
-  border: 0.1rem solid #C6C2C2ee;
+  margin: 20px auto;
+  border: 1px solid #C6C2C2ee;
 }
 
 .bold {
   font-weight: 600;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 body {
@@ -85,7 +89,7 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  padding: 6.0rem 3.0rem 6.0rem;
+  padding: 60px 30px 60px;
   text-align: center;
   color: #fff;
   height: 49.0rem;
@@ -105,12 +109,11 @@ body {
 }
 
 .header_container i {
-  font-size: 6.4rem;
+  font-size: 64px;
 }
 
 .header_title {
   font-weight: 300;
-  margin-top: 30px;
 }
 
 .header_btn {
@@ -136,7 +139,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.0rem 2.0rem 3.0rem;
+  padding: 30px 20px 30px;
   position: relative;
   overflow: hidden;
 }
@@ -157,12 +160,12 @@ article {
   background: url('https://images.wallpaperscraft.com/image/forest_trees_nature_84566_1920x1080.jpg');
   background-position: center center;
   background-size: cover;
-  filter: blur(0.3rem);
+  filter: blur(3px);
   position: absolute;
-  top: -0.5rem;
-  left: -0.5rem;
-  width: calc(100% + 1.0rem);
-  height: calc(100% + 1.0rem);
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
   z-index: -1;
 }
 
@@ -178,12 +181,12 @@ article {
   height: 8.0rem;
   font-size: 4.0rem;
   color: #fff;
-  border: 0.1rem solid #fff;
+  border: 1px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
-  margin: 2.5rem;
+  border-radius: 5px;
+  margin: 25px;
   transform: rotate(45deg);
   background-color: transparent;
 }
@@ -203,21 +206,21 @@ hr {
 }
 
 article .itens {
-  margin: 2.0rem 0;
+  margin: 20px 0;
 }
 
 article .itens h3 {
-  margin-top: 2.0rem;
+  margin-top: 20px;
 }
 
 article .itens button {
   color: #000;
-  border: 0.2rem solid #ccc;
+  border: 2px solid #ccc;
 }
 
 .register_container {
   position: relative;
-  padding: 3.0rem 2.5rem;
+  padding: 30px 25px;
   overflow: hidden;
 }
 
@@ -226,8 +229,8 @@ article .itens button {
 }
 
 .register_container hr {
-  margin: 2.0rem auto;
-  border: 0.1rem solid #fff;
+  margin: 20px auto;
+  border: 1px solid #fff;
 }
 
 .register_container p {
@@ -246,7 +249,7 @@ article .itens button {
 }
 
 .register_container button + button {
-  margin-top: 2.0rem;
+  margin-top: 20px;
 }
 
 .social {
@@ -254,7 +257,7 @@ article .itens button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2.0rem;
+  padding: 20px;
   color: rgba(255, 255, 255, 0.7);
   background-image: linear-gradient(
   225deg,
@@ -272,7 +275,7 @@ article .itens button {
 }
 
 .social p {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-size: 1.4rem;
 }
 
@@ -282,7 +285,7 @@ article .itens button {
 }
 
 .social_itens li {
-  margin: 1.0rem;
+  margin: 10px;
   font-size: 2.5rem;
 }
 

@@ -10,5 +10,5 @@ Este é o primeiro clone que desenvolvi utilizando HTML e CSS, colocando em prá
 ## 🖥️ Resultado
 <h1 align="center">
   <img alt="Image phaton clone" src="https://i.imgur.com/bn3sbun.png" width="450px"> 
+  <p>Confira o resultado: <a href="https://phaton-template-clone-ruuuff.netlify.app">phaton-template-clone-ruuuff</a></p>
 </h1>
-Confira o resultado: <a href="https://phaton-template-clone-ruuuff.netlify.app">phaton-template-clone-ruuuff</a>

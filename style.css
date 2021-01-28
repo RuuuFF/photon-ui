@@ -135,7 +135,18 @@ body {
   transform-origin: bottom center;
 }
 
+/* animações do header */
+.header_container i,
+.header_title,
+.header_container p {
+  opacity: 0;
+  animation: opacity ease-out 1s 0.5s forwards;
+}
 
+.header_btn {
+  transform: translateY(500%);
+  animation: translateY ease-out 0.8s 1.5s forwards;
+}
 
 article {
   display: flex;
@@ -294,5 +305,25 @@ article .itens button {
 @media (max-width: 580px) {
   br {
     display: none;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  } 
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(500%);
+  }
+  
+  to {
+    transform: translateY(0);
   }
 }

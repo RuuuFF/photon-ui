@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
-
-:root {
-  font-size: 62.5%; /* significa que vai ter 10px, e cada 1.6rem = 16px */
-}
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 * {
   margin: 0;
@@ -10,320 +6,434 @@
   box-sizing: border-box;
 }
 
-h2, h3 {
-  font-weight: 300;
+:root {
+  --max-size: 1120px;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* geral */
+h1 {
+  font-size: 2.5rem;
   text-align: center;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  letter-spacing: 0.05rem;
+  color: #3d3e3e;
 }
 
 h3 {
-  font-size: 1.872rem;
+  color: #3e3e3e;
+  font-size: 1.75rem;
+}
+
+h1, h2, h3, p {
+  font-weight: 300;
 }
 
 p {
-  text-align: center;
-  opacity: .8;
-  font-size: 1.6rem;
-  line-height: 2.0rem;
-  margin: 2.0rem 0;
-}
-
-img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
+  line-height: 1.9rem;
+  font-size: 1.15rem;
+  color: #666;
 }
 
 a {
   text-decoration: none;
+  border-bottom: 1px dashed #ffffff99;
   color: #fff;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
-  transition: border-bottom 0.3s ease;
 }
 
-a:hover {
-  border-bottom-color: transparent;
+img {
+  display: block;
 }
 
 button {
-  text-transform: uppercase;
-  width: 100%;
-  background-color: transparent;
-  padding: 1.4rem;
-  border: 0.1rem solid white;
-  border-radius: 5px;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 4px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
-  color: white;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 button:focus {
   outline: none;
 }
 
-hr {
-  width: 30%;
-  margin: 20px auto;
-  border: 1px solid #C6C2C2ee;
-}
-
-.bold {
-  font-weight: 600;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-}
-
-.header_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-  padding: 60px 30px 60px;
-  text-align: center;
-  color: #fff;
-  height: 49.0rem;
-  background-image: linear-gradient(
-  45deg,
-  #1B4332 0%,
-  #1B4332 16%,
-  #2D6A4F 16%,
-  #2D6A4F 33%,
-  #40916C 33%,
-  #40916C 50%,
-  #52B788 50%,
-  #52B788 66%,
-  #74C69D 66%,
-  #74C69D 83%,
-  #95D5B2 83%);
-}
-
-.header_container i {
-  font-size: 64px;
-}
-
-.header_title {
-  font-weight: 300;
-}
-
-.header_btn {
+.button-dash {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.header_btn::before {
+.button-dash::before {
   content: '';
-  width: 0.1rem;
-  background-color: white;
-  height: 100.0rem;
   position: absolute;
-  left: 50%;
   bottom: 0;
-  transform: rotate(180deg);
-  transform-origin: bottom center;
+  left: 50%;
+  width: 1px;
+  height: 100rem;
+  background-color: #fff;
+  transform: translate(-50%, 100%);
 }
 
-/* animações do header */
-.header_container i,
-.header_title,
-.header_container p {
-  opacity: 0;
-  animation: opacity ease-out 1s 0.5s forwards;
+li {
+  list-style: none;
 }
 
-.header_btn {
-  transform: translateY(500%);
-  animation: translateY ease-out 0.8s 1.5s forwards;
+hr {
+  border: 0;
+  height: 2px;
+  width: 7rem;
+  background-color: #aaa;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 20px 30px;
+br {
+  display: none;
+}
+
+/* header */
+header {
+  background-image: linear-gradient(
+    45deg,
+    #1B4332 0%,
+    #1B4332 16%,
+    #2D6A4F 16%,
+    #2D6A4F 33%,
+    #40916C 33%,
+    #40916C 50%,
+    #52B788 50%,
+    #52B788 66%,
+    #74C69D 66%,
+    #74C69D 83%,
+    #95D5B2 83%);
+  padding: 8rem 0;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
-.article_background {
-  color: #fff;
-}
-
-.article_background p {
-  opacity: .7;
-}
-
-.article_background hr {
-  border-color: #fff;
-}
-
-.blur_bg {
-  background: url('https://images.wallpaperscraft.com/image/forest_trees_nature_84566_1920x1080.jpg');
-  background-position: center center;
-  background-size: cover;
-  filter: blur(3px);
+header::before {
+  content: '';
   position: absolute;
-  top: -5px;
-  left: -5px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.2) 100%);
   z-index: -1;
 }
 
-.article_icons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.article_icons div {
-  width: 8.0rem;
-  height: 8.0rem;
-  font-size: 4.0rem;
-  color: #fff;
-  border: 1px solid #fff;
+.header-content {
+  width: min(95vw, var(--max-size));
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
-  margin: 25px;
-  transform: rotate(45deg);
-  background-color: transparent;
+  flex-direction: column;
 }
 
-.article_icons div i {
-  transform: rotate(-45deg);
-}
-
-.article_image h2,
-hr {
-  color: #fff;
-  opacity: 1;
-}
-
-.article_image p {
+.header-content .cloud {
+  font-size: 5rem;
   color: #fff;
 }
 
-article .itens {
-  margin: 20px 0;
+.header-content h1 {
+  color: #fff;
+  margin: 1.5rem;
 }
 
-article .itens h3 {
-  margin-top: 20px;
+.header-content h1 span {
+  font-weight: 400;
 }
 
-article .itens button {
-  color: #000;
-  border: 2px solid #ccc;
+.header-content p {
+  color: #3e3e3e;
+  text-align: center;
+  color: #fafafa;
+  font-weight: 300;
 }
 
-.register_container {
+.header-content br {
+  display: block;
+}
+
+.header-content button {
+  margin-top: 3rem;
+}
+
+.header-content button:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+
+/* first section */
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: min(95vw, var(--max-size));
+  margin: 6rem auto;
+}
+
+.first-section .img-container,
+.first-section .text-content {
+  width: 50%;
+  padding: 1rem;
+}
+
+.first-section img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text-content h2 {
+  margin-bottom: 2rem
+}
+
+.text-content p {
+  margin-top: 2rem;
+}
+
+
+/* secondary section */
+.second-section {
   position: relative;
-  padding: 30px 25px;
+  overflow: hidden;
+  padding: 6rem 0;
+  z-index: 1;
+}
+
+.second-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-image: url('https://images.wallpaperscraft.com/image/spruce_trees_grass_184844_1920x1080.jpg');
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+/* container com background */
+.icons-text-container {
+  width: min(95vw, var(--max-size));
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.icons-text-container .icons-area,
+.icons-text-container .text-content {
+  width: 50%;
+  padding: 1rem;
+}
+
+.icons-text-container .icons-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icons-area .icon {
+  width: 9rem;
+  height: 9rem;
+  margin: 3rem 3rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-text-container .icon i {
+  transform: rotate(-45deg);
+  color: #fff;
+  font-size: 4rem;
+}
+
+.icons-text-container .text-content h2 {
+  color: #fff;
+}
+
+.icons-text-container .text-content p {
+  color: #ccc;
+}
+
+
+/* third section */
+.third-section .text-content {
+  width: min(95vw, var(--max-size));
+  margin: 6rem auto 2rem;
+  text-align: center;
+}
+
+.third-section .text-content hr {
+  margin: 0 auto;
+}
+
+.third-section .images-section {
+  width: min(95vw, var(--max-size));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.images-section .about-image {
+  text-align: center;
   overflow: hidden;
 }
 
-.register_container h2 {
+.images-section .about-image img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.images-section .about-image p {
+  margin: 2rem 0;
+}
+
+.images-section .about-image button {
+  border-color: #aaa;
+  color: #777;
+}
+
+
+/* four section */
+.four-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+  padding: 6rem 0;
+  z-index: 1;
+}
+
+.four-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-image: url('https://images.wallpaperscraft.com/image/spruce_trees_grass_184844_1920x1080.jpg');
+  background-size: cover;
+  background-position: top;
+  filter: blur(2px);
+  z-index: -1;
+}
+
+.four-section .text-content {
+  width: min(95vw, var(--max-size));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.four-section .text-content h2 {
   color: #fff;
 }
 
-.register_container hr {
-  margin: 20px auto;
-  border: 1px solid #fff;
-}
-
-.register_container p {
-  color: #fff;
-}
-
-.register_container button:nth-of-type(1) {
+.four-section .text-content hr {
+  margin: 0 auto;
   background-color: #fff;
-  color: #000;
-  transition: 0.2s ease;
 }
 
-.register_container button:nth-of-type(1):hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.four-section .text-content p {
+  color: #ccc;
+}
+
+.four-section .button-container {
+  width: min(95vw, var(--max-size));
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.four-section .button-container button {
+  width: 13rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.four-section .button-container button:first-child {
+  background-color: #fff;
+  color: #333;
+}
+
+.four-section .button-container button:hover {
+  background-color: rgba(255,255,255,0.2);
   color: #fff;
 }
 
-.register_container button + button {
-  margin-top: 20px;
-}
-
-.social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  color: rgba(255, 255, 255, 0.7);
+footer {
   background-image: linear-gradient(
-  225deg,
-  #1B4332 0%,
-  #1B4332 16%,
-  #2D6A4F 16%,
-  #2D6A4F 33%,
-  #40916C 33%,
-  #40916C 50%,
-  #52B788 50%,
-  #52B788 66%,
-  #74C69D 66%,
-  #74C69D 83%,
-  #95D5B2 83%);
+    45deg,
+    #1B4332 0%,
+    #1B4332 16%,
+    #2D6A4F 16%,
+    #2D6A4F 33%,
+    #40916C 33%,
+    #40916C 50%,
+    #52B788 50%,
+    #52B788 66%,
+    #74C69D 66%,
+    #74C69D 83%,
+    #95D5B2 83%);
+  padding: 6rem 0;
+  position: relative;
+  z-index: 1;
 }
 
-.social p {
-  margin: 5px 0 0 0;
-  font-size: 1.4rem;
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0,0,0,0.1) 0%,
+    rgba(0,0,0,0.2) 100%);
 }
 
-.social_itens {
-  list-style-type: none;
+footer .socials {
+  width: min(95vw, var(--max-size));
+  margin: 0 auto;
   display: flex;
+  justify-content: center;
 }
 
-.social_itens li {
-  margin: 10px;
-  font-size: 2.5rem;
+footer ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-@media (max-width: 580px) {
-  br {
-    display: none;
-  }
+footer ul li a {
+  border-bottom-color: transparent;
+  font-size: 1.5rem;
 }
 
-@keyframes opacity {
-  from {
-    opacity: 0;
-  } 
-  
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes translateY {
-  from {
-    transform: translateY(500%);
-  }
-  
-  to {
-    transform: translateY(0);
-  }
+footer .credits p {
+  text-align: center;
+  color: #eee;
 }

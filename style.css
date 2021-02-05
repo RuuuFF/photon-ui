@@ -7,7 +7,11 @@
 }
 
 :root {
+  --min-size: 94vw;
   --max-size: 1120px;
+  --padding-value: 6rem;
+  --icon-box: 9rem;
+  --icon-size: 4rem;
 }
 
 body {
@@ -22,7 +26,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 3rem;
   letter-spacing: 0.05rem;
   color: #3d3e3e;
@@ -30,7 +34,7 @@ h2 {
 
 h3 {
   color: #3e3e3e;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h1, h2, h3, p {
@@ -54,7 +58,7 @@ img {
 }
 
 button {
-  padding: 0.75rem 1.75rem;
+  padding: 0.75rem 2.25rem;
   border: 1px solid #fff;
   background: transparent;
   border-radius: 4px;
@@ -71,11 +75,11 @@ button:focus {
   outline: none;
 }
 
-.button-dash {
+button.head {
   position: relative;
 }
 
-.button-dash::before {
+button.head::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -116,7 +120,7 @@ header {
     #74C69D 66%,
     #74C69D 83%,
     #95D5B2 83%);
-  padding: 8rem 0;
+  padding: calc(var(--padding-value) + 2rem) 0;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -137,7 +141,7 @@ header::before {
 }
 
 .header-content {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -185,8 +189,8 @@ header::before {
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
-  width: min(95vw, var(--max-size));
-  margin: 6rem auto;
+  width: min(var(--min-size), var(--max-size));
+  margin: var(--padding-value) auto;
 }
 
 .first-section .img-container,
@@ -213,7 +217,7 @@ header::before {
 .second-section {
   position: relative;
   overflow: hidden;
-  padding: 6rem 0;
+  padding: var(--padding-value) 0;
   z-index: 1;
 }
 
@@ -232,7 +236,7 @@ header::before {
 
 /* container com background */
 .icons-text-container {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -252,9 +256,9 @@ header::before {
 }
 
 .icons-area .icon {
-  width: 9rem;
-  height: 9rem;
-  margin: 3rem 3rem;
+  width: var(--icon-box);
+  height: var(--icon-box);
+  margin: 3rem;
   border: 1px solid #fff;
   border-radius: 8px;
   transform: rotate(45deg);
@@ -266,7 +270,7 @@ header::before {
 .icons-text-container .icon i {
   transform: rotate(-45deg);
   color: #fff;
-  font-size: 4rem;
+  font-size: var(--icon-size);
 }
 
 .icons-text-container .text-content h2 {
@@ -280,7 +284,7 @@ header::before {
 
 /* third section */
 .third-section .text-content {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 6rem auto 2rem;
   text-align: center;
 }
@@ -290,7 +294,7 @@ header::before {
 }
 
 .third-section .images-section {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -323,7 +327,7 @@ header::before {
   position: relative;
   overflow: hidden;
   margin-top: 3rem;
-  padding: 6rem 0;
+  padding: var(--padding-value) 0;
   z-index: 1;
 }
 
@@ -342,7 +346,7 @@ header::before {
 }
 
 .four-section .text-content {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 0 auto;
   text-align: center;
 }
@@ -361,7 +365,7 @@ header::before {
 }
 
 .four-section .button-container {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 2rem auto 0;
   text-align: center;
 }
@@ -396,7 +400,7 @@ footer {
     #74C69D 66%,
     #74C69D 83%,
     #95D5B2 83%);
-  padding: 6rem 0;
+  padding: var(--padding-value) 0;
   position: relative;
   z-index: 1;
 }
@@ -412,10 +416,11 @@ footer::before {
     45deg,
     rgba(0,0,0,0.1) 0%,
     rgba(0,0,0,0.2) 100%);
+  z-index: -1;
 }
 
 footer .socials {
-  width: min(95vw, var(--max-size));
+  width: min(var(--min-size), var(--max-size));
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -425,6 +430,7 @@ footer ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
+  justify-items: center;
   margin-bottom: 2rem;
 }
 
@@ -436,4 +442,135 @@ footer ul li a {
 footer .credits p {
   text-align: center;
   color: #eee;
+}
+
+@media only screen and (max-width: 990px) {
+  :root {
+    --icon-box: 7rem;
+    --icon-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  .icons-area .icon {
+    margin: 2rem 2.5rem;
+  }
+}
+
+
+/* Small devices (portrait tablets and large phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  :root {
+    font-size: 87.5%;
+    --padding-value: 3rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2.25rem;
+  }
+  
+  /* second section */
+  .first-section {
+    flex-direction: column;
+  }
+  
+  .first-section .img-container,
+  .first-section .text-content {
+    width: 100%;
+  }
+  
+  .first-section .text-content {
+    text-align: center;
+  }
+  
+  .first-section .text-content hr {
+    margin: 0 auto;
+  }
+  
+  /* second section */
+  .icons-text-container {
+    flex-direction: column;
+  }
+  
+  .icons-text-container .icons-area,
+  .icons-text-container .text-content {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .icons-text-container .text-content {
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .icons-text-container .text-content hr {
+    margin: 0 auto;
+  }
+  
+  /* third section */
+  .third-section .text-content {
+    margin: 3rem auto 2rem;
+  }
+  
+  .third-section .images-section {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+  
+  .images-section .about-image p {
+    margin: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --icon-box: 6rem;
+    --icon-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  
+  button {
+    width: 90%;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .header-content h1 br,
+  .header-content p br {
+    display: none;
+  }
+  
+  .icons-text-container .text-content {
+    margin-top: 1rem;
+  }
+  
+  .four-section .button-container {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+  
+  .four-section .button-container button ~ button {
+    margin-top: 1rem;
+  }
+  
+  .socials ul {
+    margin-bottom: 1rem;
+  }
+  
+  footer br {
+    display: block;
+  }
+  
+  footer span {
+    display: none;
+  }
 }

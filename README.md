@@ -1,5 +1,6 @@
 ## ⚙️ Projeto
-Este é o primeiro clone que desenvolvi utilizando HTML e CSS, colocando em prática parte do que já aprendi. Utilizei como base a homepage <a href="https://html5up.net/photon">Photon</a>, po <a href="https://html5up.net/">HTML5 UP</a>.
+Esta aplicação é minha primeira reprodução, de uma homepage. Utilizando **HTML** e **CSS**, colocando em prática parte do que já aprendi. Homepage reproduzida: <a href="https://html5up.net/photon">Photon</a>.
+
 
 ## ✈️ Tecnologias
 - HTML

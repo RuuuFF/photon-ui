@@ -174,8 +174,18 @@ header::before {
   display: block;
 }
 
+.header-content .cloud,
+.header-content h1,
+.header-content p {
+  opacity: 0;
+  visibility: hidden;
+  animation: opacity 0.5s linear 0.5s forwards;
+}
+
 .header-content button {
   margin-top: 3rem;
+  transform: translateY(500%);
+  animation: buttonUp 0.8s linear 1s forwards;
 }
 
 .header-content button:hover {
@@ -442,6 +452,19 @@ footer ul li a {
 footer .credits p {
   text-align: center;
   color: #eee;
+}
+
+@keyframes opacity {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes buttonUp {
+  to {
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (max-width: 990px) {

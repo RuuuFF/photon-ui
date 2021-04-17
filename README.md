@@ -9,5 +9,5 @@ Esta aplicação é minha primeira reprodução, de uma homepage. Utilizando **H
 ## 🖥️ Resultado
 <div align="center">
   <img alt="Photon Clone" src="https://i.imgur.com/bn3sbun.png" width="450px"> 
-  <p>Confira o resultado: <a href="https://photon-homepage-clone-ruuuff.netlify.app">photon-homepage-clone-ruuuff</a></p>
+  <p>Confira o resultado: <a href="https://photon-ui-ruuuff.netlify.app">photon-homepage-clone-ruuuff</a></p>
 </div>

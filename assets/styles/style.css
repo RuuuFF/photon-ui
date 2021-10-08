@@ -16,7 +16,7 @@
 
 body {
   background-color: #fafafa;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 /* geral */
@@ -37,7 +37,10 @@ h3 {
   font-size: 1.5rem;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   font-weight: 300;
 }
 
@@ -80,7 +83,7 @@ button.head {
 }
 
 button.head::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -109,17 +112,18 @@ br {
 header {
   background-image: linear-gradient(
     45deg,
-    #1B4332 0%,
-    #1B4332 16%,
-    #2D6A4F 16%,
-    #2D6A4F 33%,
-    #40916C 33%,
-    #40916C 50%,
-    #52B788 50%,
-    #52B788 66%,
-    #74C69D 66%,
-    #74C69D 83%,
-    #95D5B2 83%);
+    #1b4332 0%,
+    #1b4332 16%,
+    #2d6a4f 16%,
+    #2d6a4f 33%,
+    #40916c 33%,
+    #40916c 50%,
+    #52b788 50%,
+    #52b788 66%,
+    #74c69d 66%,
+    #74c69d 83%,
+    #95d5b2 83%
+  );
   padding: calc(var(--padding-value) + 2rem) 0;
   position: relative;
   overflow: hidden;
@@ -127,7 +131,7 @@ header {
 }
 
 header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -135,8 +139,9 @@ header::before {
   height: 100%;
   background: linear-gradient(
     45deg,
-    rgba(0,0,0,0.1) 0%,
-    rgba(0,0,0,0.2) 100%);
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   z-index: -1;
 }
 
@@ -189,9 +194,8 @@ header::before {
 }
 
 .header-content button:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
 }
-
 
 /* first section */
 .first-section {
@@ -215,13 +219,12 @@ header::before {
 }
 
 .text-content h2 {
-  margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .text-content p {
   margin-top: 2rem;
 }
-
 
 /* secondary section */
 .second-section {
@@ -232,13 +235,13 @@ header::before {
 }
 
 .second-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
-  background-image: url('https://images.wallpaperscraft.com/image/spruce_trees_grass_184844_1920x1080.jpg');
+  background-image: url("../images/spruce_trees_forest.jpg");
   background-size: cover;
   filter: blur(2px);
   z-index: -1;
@@ -291,7 +294,6 @@ header::before {
   color: #ccc;
 }
 
-
 /* third section */
 .third-section .text-content {
   width: min(var(--min-size), var(--max-size));
@@ -331,7 +333,6 @@ header::before {
   color: #777;
 }
 
-
 /* four section */
 .four-section {
   position: relative;
@@ -342,13 +343,13 @@ header::before {
 }
 
 .four-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10px;
   left: -10px;
   width: calc(100% + 20px);
   height: calc(100% + 20px);
-  background-image: url('https://images.wallpaperscraft.com/image/spruce_trees_grass_184844_1920x1080.jpg');
+  background-image: url("../images/spruce_trees_forest.jpg");
   background-size: cover;
   background-position: top;
   filter: blur(2px);
@@ -392,31 +393,32 @@ header::before {
 }
 
 .four-section .button-container button:hover {
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
 footer {
   background-image: linear-gradient(
     45deg,
-    #1B4332 0%,
-    #1B4332 16%,
-    #2D6A4F 16%,
-    #2D6A4F 33%,
-    #40916C 33%,
-    #40916C 50%,
-    #52B788 50%,
-    #52B788 66%,
-    #74C69D 66%,
-    #74C69D 83%,
-    #95D5B2 83%);
+    #1b4332 0%,
+    #1b4332 16%,
+    #2d6a4f 16%,
+    #2d6a4f 33%,
+    #40916c 33%,
+    #40916c 50%,
+    #52b788 50%,
+    #52b788 66%,
+    #74c69d 66%,
+    #74c69d 83%,
+    #95d5b2 83%
+  );
   padding: var(--padding-value) 0;
   position: relative;
   z-index: 1;
 }
 
 footer::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -424,8 +426,9 @@ footer::before {
   height: 100%;
   background: linear-gradient(
     45deg,
-    rgba(0,0,0,0.1) 0%,
-    rgba(0,0,0,0.2) 100%);
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
   z-index: -1;
 }
 
@@ -472,16 +475,15 @@ footer .credits p {
     --icon-box: 7rem;
     --icon-size: 3.5rem;
   }
-  
+
   h2 {
     font-size: 1.75rem;
   }
-  
+
   .icons-area .icon {
     margin: 2rem 2.5rem;
   }
 }
-
 
 /* Small devices (portrait tablets and large phones, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -489,59 +491,59 @@ footer .credits p {
     font-size: 87.5%;
     --padding-value: 3rem;
   }
-  
+
   .header-content h1 {
     font-size: 2.25rem;
   }
-  
+
   /* second section */
   .first-section {
     flex-direction: column;
   }
-  
+
   .first-section .img-container,
   .first-section .text-content {
     width: 100%;
   }
-  
+
   .first-section .text-content {
     text-align: center;
   }
-  
+
   .first-section .text-content hr {
     margin: 0 auto;
   }
-  
+
   /* second section */
   .icons-text-container {
     flex-direction: column;
   }
-  
+
   .icons-text-container .icons-area,
   .icons-text-container .text-content {
     width: 100%;
     padding: 0;
   }
-  
+
   .icons-text-container .text-content {
     text-align: center;
     margin-top: 3rem;
   }
-  
+
   .icons-text-container .text-content hr {
     margin: 0 auto;
   }
-  
+
   /* third section */
   .third-section .text-content {
     margin: 3rem auto 2rem;
   }
-  
+
   .third-section .images-section {
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
   }
-  
+
   .images-section .about-image p {
     margin: 1.5rem 0;
   }
@@ -552,47 +554,47 @@ footer .credits p {
     --icon-box: 6rem;
     --icon-size: 3rem;
   }
-  
+
   h2 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  
+
   button {
     width: 90%;
   }
-  
+
   .header-content h1 {
     font-size: 2rem;
   }
-  
+
   .header-content h1 br,
   .header-content p br {
     display: none;
   }
-  
+
   .icons-text-container .text-content {
     margin-top: 1rem;
   }
-  
+
   .four-section .button-container {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
-  
+
   .four-section .button-container button ~ button {
     margin-top: 1rem;
   }
-  
+
   .socials ul {
     margin-bottom: 1rem;
   }
-  
+
   footer br {
     display: block;
   }
-  
+
   footer span {
     display: none;
   }

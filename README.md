@@ -1,5 +1,5 @@
 # 📚 Photon UI
-Esta aplicação é minha primeira tentativa de reprodução de uma homepage, utilizando HTML e CSS com o objetivo de colocar em prática parte do que já aprendi. A homepage reproduzida é a <a href="https://html5up.net/photon">Photon</a>.
+Esta aplicação é minha primeira tentativa de UI Clone de uma página, com o objetivo de colocar em prática parte do que já aprendi com HTML e CSS. A homepage utilizada como referência é a <a href="https://html5up.net/photon">Photon</a>.
 
 ## ✈️ Tecnologias
 - HTML
